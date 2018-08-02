@@ -12,8 +12,8 @@
 
       $.getJSON("/products/"+nextId+"/data"),function(data){
         console.log(nextId)
-        $(".product-name").text(data["name"])
-        $(".product-description").text(data["description"])
+        $(".product-name").html(data["name"])
+        $(".product-description").html(data["description"])
       }
     })
   })

@@ -7,6 +7,7 @@
 
 <script type="text/javascript" charset="utf-8">
   $(function(){
+    console.log('working')
     $(".js-next").on("click",function(){
       var nextId=parseInt($(".js-next").attr("data-id"))+1;
       $.getJSON("/products/"+nextId+"/data"),function(data){
